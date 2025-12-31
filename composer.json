@@ -1,0 +1,28 @@
+{
+    "name": "nabeel030/schema-to-migrations",
+    "description": "Generate Laravel migrations from a .sql dump by importing into a temp DB and introspecting schema.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+      "php": "^8.2",
+      "illuminate/support": "^12.0",
+      "illuminate/console": "^12.0",
+      "illuminate/database": "^12.0",
+      "symfony/process": "^7.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "Nabeel030\\SchemaToMigrations\\": "src/"
+      }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Nabeel030\\SchemaToMigrations\\SchemaToMigrationsServiceProvider"
+        ]
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }
+  
